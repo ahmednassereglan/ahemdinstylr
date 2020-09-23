@@ -1,0 +1,413 @@
+body {
+    width: 100%;
+    height: auto;
+    font-family: "Helvetica 45 Light", sans-serif;
+    /*margin:  top right buttom  left*/
+    margin: auto;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+div {
+    display: block;
+}
+
+
+/*.......................navbar.........................*/
+
+#navbar {
+    width: 100%;
+    height: 70px;
+    background-color: #262626;
+}
+
+#navbar a h2 {
+    margin: 0;
+    float: left;
+    line-height: 60px;
+    padding-left: 80px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    font-family: "Helvetica 65 Medium", sans-serif;
+    animation: mymmove 5s infinite;
+}
+
+@keyframes mymmove {
+    50% {
+        letter-spacing: 5px;
+        font-size: 40px;
+        opacity: 0.5;
+    }
+}
+
+#navbar a p {
+    line-height: 70px;
+    display: block;
+    float: left;
+    text-align: right;
+    margin-left: -145px;
+    padding-top: 6px;
+    color: #fff;
+    font-size: 13px;
+    opacity: 0.4;
+    font-family: "Helvetica 45 Light", sans-serif;
+    text-transform: uppercase;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    50% {
+        letter-spacing: 5px;
+        font-size: 15px;
+        opacity: 1;
+    }
+}
+
+#navbar a {
+    cursor: pointer;
+}
+
+#navbar a h2 span {
+    color: #ff006c;
+}
+
+#navbar ul,
+.foot ul {
+    list-style: none;
+    padding-right: 5%;
+    float: right;
+    margin-top: 0;
+}
+
+#navbar ul li,
+.foot ul li {
+    float: left;
+    padding-left: 40px;
+    line-height: 70px;
+}
+
+#navbar ul li a,
+.foot ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+#navbar ul li a i,
+.foot ul li a i {
+    font-size: 25px;
+    color: #fff;
+    line-height: 70px
+}
+
+#navbar ul li a i:hover,
+.foot ul li a i:hover {
+    opacity: 0.9;
+    color: #ff006c;
+}
+
+#navbar ul li a:hover {
+    color: #ff006c;
+}
+
+#navbar ul li .active {
+    color: #ff006c;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* .................................head.........................*/
+
+#head {
+    background-image: url(../images/2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 978px;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% {
+        background-image: url(../images/2.jpg);
+    }
+    25% {
+        background-image: url(../images/1.jpg);
+    }
+    50% {
+        background-image: url(../images/2.jpg);
+    }
+    75% {
+        background-image: url(../images/1.jpg);
+    }
+    100% {
+        background-image: url(../images/2.jpg);
+    }
+}
+
+#head #hd {
+    width: 43%;
+    height: 27%;
+    margin: auto;
+    padding-top: 30%
+}
+
+#head #hd h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 70px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#head #hd p {
+    text-align: center;
+}
+
+#head #hd p button {
+    width: 190px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0);
+    border-color: #fff;
+    border-style: solid;
+    border-width: medium;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* ....................footer..................... */
+
+.foot {
+    width: 100%;
+    height: 70px;
+    background: #404040;
+    text-align: center;
+    font-size: 20px;
+    line-height: 80px;
+}
+
+.foot p {
+    float: right;
+    margin: 0;
+    padding-right: 18px;
+    color: #fff;
+}
+
+.foot img {
+    float: left;
+    padding: 20px 30px;
+    margin: 0;
+}
+
+.foot ul {
+    float: left;
+    margin: 0;
+}
+
+.foot ul li a i {
+    color: #FFF;
+}
+
+
+/*000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
+
+.log {
+    height: 750px
+}
+
+.log .login-form {
+    width: 40%;
+    margin: auto;
+}
+
+.log .login-form h2,
+.fashoin h2 {
+    color: #ff006c;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 36px;
+    margin-top: 0;
+    padding-top: 80;
+}
+
+.log .login-form form {
+    margin: 0
+}
+
+.log .login-form form .group-input,
+.reg-form {
+    margin-bottom: 25px;
+}
+
+.log .login-form form .group-input label,
+.reg-form label {
+    display: block;
+    font-size: 18px;
+    color: #ff006c;
+    margin-bottom: 13px;
+}
+
+.log .login-form form .group-input input,
+.reg-form input {
+    border: 3px solid #ffcce1;
+    background: #ffcce1;
+    background: rgba(0, 0, 0, 0);
+    height: 50px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
+.log .login-form form .group-input gi-check {
+    margin-bottom: 8px;
+}
+
+.log .login-form form .group-input gi-check .gi-more {
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.log .login-form form .group-input gi-check .gi-more label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 28px;
+    font-size: 14px;
+    color: #6B6B6B;
+    float: left;
+}
+
+.log .login-form form .gi-more input,
+.gender input {
+    width: 25px;
+    float: left;
+    margin: 0;
+    margin-top: -15px;
+    margin-right: 20px;
+    opacity: 0.9
+}
+
+.log .login-form form .gi-more label span {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    height: 15px;
+    width: 13px;
+    border: 1px solid #6C6C6C;
+    border-radius: 2px;
+}
+
+.log .forget-pass {
+    float: right;
+    line-height: 20px;
+    margin-top: -50px;
+    font-size: 14px;
+    color: #ff006c;
+}
+
+.log .login-form form p {
+    text-align: center;
+}
+
+.log .login-form form button,
+.check button {
+    width: 50%;
+    height: 50px;
+    color: #ff006c;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+.switch-login {
+    text-align: center;
+    margin-top: 22px;
+}
+
+.switch-login .or-login {
+    color: #ff006c;
+    text-decoration: none;
+    font-size: 19px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.reg-form {
+    width: 35%;
+    height: 1800px;
+    text-align: center;
+    padding-top: 15px;
+    margin: auto;
+}
+
+.gender {
+    width: 140px;
+}
+
+.gender input {
+    margin-top: -100px;
+}
+
+.gender label {
+    margin-left: 40px;
+    padding: 0;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #ff006c;
+    margin-bottom: 20px;
+}
+
+.contact textarea {
+    width: 100%;
+    border: 3px solid #ffcce1;
+    background: #ffcce1;
+    background: rgba(0, 0, 0, 0);
+}
+
+.check input {
+    width: 20px;
+    display: block;
+    margin: auto;
+}
+
+.fashoin {
+    height: 800px;
+}
+
+.fashoin h2 {
+    padding-top: 40px
+}
+
+.fashoin p {
+    color: #ff006c;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 20px;
+    margin-top: 0;
+    padding-top: 10;
+}
+
+.fashoin .fash {
+    width: 100%;
+    height: 390px;
+}
+
+.fashoin .fash video {
+    padding: 15px;
+    margin-left: 160px;
+    width: 900px
+}
